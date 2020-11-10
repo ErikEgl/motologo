@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'mod';
+  src:  url('fonts/mod.eot?b4n8e9');
+  src:  url('fonts/mod.eot?b4n8e9#iefix') format('embedded-opentype'),
+    url('fonts/mod.ttf?b4n8e9') format('truetype'),
+    url('fonts/mod.woff?b4n8e9') format('woff'),
+    url('fonts/mod.svg?b4n8e9#mod') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ico {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mod' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-shopping-cart:before {
+  content: "\e90e";
+}
+.ico-lang:before {
+  content: "\e900";
+}
+.ico-luup:before {
+  content: "\e901";
+}
+.ico-mail:before {
+  content: "\e902";
+}
+.ico-motikas:before {
+  content: "\e903";
+}
+.ico-motologo:before {
+  content: "\e904";
+}
+.ico-shape-4:before {
+  content: "\e905";
+}
+.ico-sherco:before {
+  content: "\e906";
+}
+.ico-tel:before {
+  content: "\e907";
+}
+.ico-ws:before {
+  content: "\e908";
+}
+.ico-arr-left:before {
+  content: "\e909";
+}
+.ico-arr-right:before {
+  content: "\e90a";
+}
+.ico-fb:before {
+  content: "\e90b";
+}
+.ico-konto:before {
+  content: "\e90c";
+}
+.ico-ktm:before {
+  content: "\e90d";
+}
+
