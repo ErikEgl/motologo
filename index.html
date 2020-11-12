@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <title>Motologo</title>
 <!-- Fonts start -->
 <link rel="stylesheet" href="fonts/gilroy/boldid/stylesheet.css">
@@ -19,17 +20,49 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- Main CSS -->
 <link rel="stylesheet" href="css/main.css">
+<!-- Media Queries -->
+<link rel="stylesheet" href="css/media_query.css">
 
 </head>
-<body>
+<body class="js-body">
     <!-- Header start -->
 <header class="header" id="header">
+    <div class="container-fluid">
+         <!-- Header MOBILE start -->
+         <div class="row header__mobileView d-sm-none">
+            <div class="col-4 d-sm-none">
+                <a href="#" class="header__logo header__logo_mobileView ico ico-motologo">
+                </a>
+            </div>
+            <div class="col-3 d-sm-none">
+                <a href="#" class="header__username header__username_mobileView ico ico-konto">
+                    <span>
+                        John Smith
+                    </span>
+                </a>
+            </div>
+            <div class="col-3 d-sm-none">
+                <a href="#" class="header__cart header__cart_mobileView ico ico-shopping-cart">
+                    <span>
+                        950.60 €
+                    </span>
+                </a>
+            </div>
+            <div class="col-2 d-sm-none">
+                <button class="js-burger">
+                    <div class="header__burgerLine"></div>
+                    <div class="header__burgerLine"></div>
+                    <div class="header__burgerLine"></div>  
+                </button>
+            </div>
+        </div>
+         <!-- Header MOBILE finish -->
+    </div>
     <div class="container">
         <div class="row">
-            <div class="offset-6 col-6">
+            <div class="offset-xl-6 col-xl-6 col-md-12 d-none d-sm-block">
                 <div class="header__info d-flex ml-auto">
                     <a href="#" class="header__social ico ico-fb">
-                        
                     </a>
                     <a href="tel:+372123456789" class="header__phone ico ico-tel">
                         <span>(+372) 123 4567</span>
@@ -53,12 +86,13 @@
                 </div>
             </div>
         </div>
+        
         <div class="row align-items-center sec-nav">
-            <div class="col-3">
+            <div class="col-md-3 col-sm-3 d-none d-sm-block">
                 <a href="#" class="header__logo ico ico-motologo">
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-xl-3 col-lg-5 col-md-5 col-sm-7 d-none d-sm-block">
                 <div class="header__nav d-flex">
                     <a href="#" class="header__menu">
                         Home
@@ -74,7 +108,7 @@
                     </a>
                 </div>
             </div>
-            <div class="offset-5 col-1 d-flex">
+            <div class="offset-xl-5 offset-md-3 col-sm-1 d-sm-flex d-none d-sm-block">
                 <a href="#" class="header__lang  ico ico-lang">
                     <span>
                         Eng
@@ -130,16 +164,9 @@
                             Skid plate with exhaust pipe guard
                             and plastic bottom
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="protect__sliderWrap">
-                        <div class="protect__company-logo protect__company-logo2"></div>
-                        <div class="protect__protection protect__protection2"></div>
-                        <div class="protect__shadow protect__shadow2"></div>
-                        <div class="protect__text protect__text2">
-                            Skid plate with exhaust pipe guard
-                            and plastic bottom
+                        <div class="protect__btn view-visit__btn btn">
+                            View all products
+                            for Beta
                         </div>
                     </div>
                 </div>
@@ -152,16 +179,9 @@
                             Skid plate with exhaust pipe guard
                             and plastic bottom
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="protect__sliderWrap">
-                        <div class="protect__company-logo protect__company-logo2"></div>
-                        <div class="protect__protection protect__protection2"></div>
-                        <div class="protect__shadow protect__shadow2"></div>
-                        <div class="protect__text protect__text2">
-                            Skid plate with exhaust pipe guard
-                            and plastic bottom
+                        <div class="protect__btn view-visit__btn btn">
+                            View all products
+                            for Beta
                         </div>
                     </div>
                 </div>
@@ -173,6 +193,40 @@
                         <div class="protect__text protect__text2">
                             Skid plate with exhaust pipe guard
                             and plastic bottom
+                        </div>
+                        <div class="protect__btn view-visit__btn btn">
+                            View all products
+                            for Beta
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="protect__sliderWrap">
+                        <div class="protect__company-logo protect__company-logo2"></div>
+                        <div class="protect__protection protect__protection2"></div>
+                        <div class="protect__shadow protect__shadow2"></div>
+                        <div class="protect__text protect__text2">
+                            Skid plate with exhaust pipe guard
+                            and plastic bottom
+                        </div>
+                        <div class="protect__btn view-visit__btn btn">
+                            View all products
+                            for Beta
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="protect__sliderWrap">
+                        <div class="protect__company-logo protect__company-logo2"></div>
+                        <div class="protect__protection protect__protection2"></div>
+                        <div class="protect__shadow protect__shadow2"></div>
+                        <div class="protect__text protect__text2">
+                            Skid plate with exhaust pipe guard
+                            and plastic bottom
+                        </div>
+                        <div class="protect__btn view-visit__btn btn">
+                            View all products
+                            for Beta
                         </div>
                     </div>
                 </div>
@@ -182,14 +236,11 @@
             <div class="ico ico-arr-left"></div>  
         </div> 
         <!-- Protect slider finish --> 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-12">
-                <div class="protect__btn view-visit__btn btn">
-                    View all products
-                    for Beta
-                </div>
+                
             </div> 
-        </div> 
+        </div>  -->
     </div>
 </section>
 
@@ -214,6 +265,7 @@
     </div>
 </section>
 <!-- Search finish -->
+
 <!-- NewProd start -->
 <section class="newProd" id="newProd">
     <div class="container">
@@ -225,7 +277,7 @@
             </div> 
         </div> 
         <div class="row">
-            <div class="offset-2 col-2">
+            <div class="col-xl-2 offset-xl-2 col-6">
                 <div class="newProd__wrap">
                     <div class="newProd__imgWrap">
                         <div class="newProd__prodImg newProd__prodImg1"></div>
@@ -251,7 +303,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-xl-2 col-6">
                 <div class="newProd__wrap">
                     <div class="newProd__imgWrap">
                         <div class="newProd__prodImg newProd__prodImg2"></div>
@@ -277,7 +329,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-xl-2 col-6">
                 <div class="newProd__wrap">
                     <div class="newProd__imgWrap">
                         <div class="newProd__prodImg newProd__prodImg3"></div>
@@ -303,7 +355,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-xl-2 col-6">
                 <div class="newProd__wrap">
                     <div class="newProd__imgWrap">
                         <div class="newProd__prodImg newProd__prodImg4"></div>
@@ -340,11 +392,12 @@
     </div>
 </section>
 <!-- NewProd finish -->
+
 <!-- NewsBlog start -->
 <section class="newsBlog" id="newsBlog">
     <div class="container">
         <div class="row">
-            <div class="offset-2 col-4">
+            <div class="offset-md-2 col-md-4 col-12">
                 <div class="newsBlog__wrap">
                     <h6 class="newsBlog__title">
                         News
@@ -355,7 +408,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="newsBlog__wrap">
                     <h6 class="newsBlog__title">
                         From our blog
@@ -377,6 +430,7 @@
     </div>
 </section>
 <!-- NewsBlog finish -->
+
 
 <!-- UsedBy start -->
 <section class="usedBy" id="usedBy">
@@ -454,6 +508,7 @@
     </div>
 </section>
 <!-- UsedBy finish -->
+
 <!-- Brands start -->
 <section class="brands" id="brands">
     <div class="container">
@@ -473,22 +528,22 @@
         </div>
         <div class="brands__wrap">
             <div class="row">
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <div class="brands__logo ico ico-sherco"></div>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <div class="brands__logo ico ico-sherco"></div>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <div class="brands__logo ico ico-sherco"></div>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <div class="brands__logo ico ico-sherco"></div>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <div class="brands__logo ico ico-sherco"></div>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <div class="brands__logo ico ico-sherco"></div>
                 </div>
             </div>
@@ -496,20 +551,22 @@
     </div>
 </section>
 <!-- Brands finish -->
+
+
 <!-- Follow start -->
 <section class="follow" id="follow">
     <div class="container">
         <div class="row no-gutters">
-            <div class="offset-2 col-2">
+            <div class="offset-md-2 col-md-2 col-3">
                 <div class="follow__img follow__img1"></div>
             </div>
-            <div class="col-2">
+            <div class="col-3 col-md-2">
                 <div class="follow__img follow__img2"></div>
             </div>
-            <div class="col-2">
+            <div class="col-3 col-md-2">
                 <div class="follow__img follow__img3"></div>
             </div>
-            <div class="col-2">
+            <div class="col-3 col-md-2">
                 <div class="follow__img follow__img4"></div>
             </div>
         </div>
@@ -530,48 +587,48 @@
     </div>
 </section>
 <!-- Follow finish -->
+
 <!-- Footer start -->
 <footer class="footer" id="footer">
     <div class="footer__bg">
         <div class="footer__bgImg">
-            
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="offset-2 col-3">
+            <div class="offset-lg-2 col-lg-3 col-6">
                 <h6 class="footer__title">
                     Information
                 </h6>
                 <div class="footer__navWrap">
-                    <div class="footer__nav">
+                    <a href="#" class="footer__nav">
                         About Us
-                    x</div>
-                    <div class="footer__nav">
+                    </a>
+                    <a href="#" class="footer__nav">
                         Privacy Policy
-                    </div>
-                    <div class="footer__nav">
+                    </a>
+                    <a href="#" class="footer__nav">
                         Terms & Conditions
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-6">
                 <h6 class="footer__title">
                     Customer Service
                 </h6>
                 <div class="footer__navWrap">
-                    <div class="footer__nav">
+                    <a href="#" class="footer__nav">
                         Contact Us
-                    </div>
-                    <div class="footer__nav">
+                    </a>
+                    <a href="#" class="footer__nav">
                         Returns
-                    </div>
-                    <div class="footer__nav">
+                    </a>
+                    <a href="#" class="footer__nav">
                         Warranty
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-6">
                 <h6 class="footer__title">
                     Join OUR newsletter
                 </h6>
@@ -584,7 +641,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="offset-2 col-3">
+            <div class="offset-lg-2 col-md-3 col-6 ">
                 <div class="footer__privWrap">
                     <p class="footer__priv">
                         © 2020 P-Tech OÜ
@@ -592,12 +649,12 @@
                     <p class="footer__priv">
                         |
                     </p>
-                    <p class="footer__priv">
+                    <a href="#" class="footer__priv">
                         Privacy policy
-                    </p>
+                    </a>
                 </div>
             </div>
-            <div class="offset-6 col-1 footer__privWrap">
+            <div class="offset-4 offset-md-8 offset-lg-6 col-1 footer__privWrap">
                 <div class="footer__svg ico ico-ws">
                 </div>
             </div>
@@ -606,6 +663,7 @@
 </footer>
 
 <!-- Footer finish -->
+
 </body>
 
 <!-- Slider JS-->
