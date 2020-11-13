@@ -216,7 +216,15 @@
 
 
 
-
+.hamburger--spin.is-active .hamburger-inner {
+    background-color: #fff;
+}
+.hamburger--spin.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+.hamburger--spin.is-active .hamburger-inner::before {
+    background-color: #fff;
+}
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     background-color: #fff;
 }
@@ -224,6 +232,15 @@
     background-color: #000;
 }
 
+.js-active-header .hamburger--spin.is-active .hamburger-inner {
+    background-color: #000;
+}
+.js-active-header .hamburger--spin.is-active .hamburger-inner::after {
+    background-color: #000;
+}
+.js-active-header .hamburger--spin.is-active .hamburger-inner::before {
+    background-color: #000;
+}
 
 
  /* ------ Header MOBILE finish ------ */
@@ -895,16 +912,15 @@ box-shadow: 0 1px 3px rgba(0,0,0, 0.8);
     position: relative;
 }
 .sect__bgImg {
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     content: '';
     position: absolute;
     z-index: 1;
     opacity: 0.1;
-    background-size: contain;
-    object-fit: contain;
+    background-size: cover;
     background-position: center, center;
-    margin: 0 auto;
 }
 .sect__bgImg_usedBy {
     background-image: url(../img/png/layer-34.png);
@@ -1135,6 +1151,7 @@ box-shadow: 0 1px 3px rgba(0,0,0, 0.8);
     position: relative;
 }
 .sect__bg {
+    z-index: -1;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1148,7 +1165,6 @@ box-shadow: 0 1px 3px rgba(0,0,0, 0.8);
 }
 .sect__bgImg_footer {
     background-image: url(../img/jpg/layer-27.jpg);
-    background-size: contain;
 }
 
 .sect__bg::after {
