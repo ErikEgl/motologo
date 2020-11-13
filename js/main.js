@@ -135,11 +135,12 @@ addMenuActiveClass(146, 'js-fixed-header')
 
 
 
-onclick= display()
 
-function display() {
-  document.getElementById("myID").style.marginTop = "80px";
-}
+// onclick= display()
+
+// function display() {
+//   document.getElementById("myID").style.marginTop = "80px";
+// }
 
 
 // function addMenuActiveClass(scrollHeight, activeClass) {

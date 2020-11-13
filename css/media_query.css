@@ -221,10 +221,13 @@
 		order: 1;
     }
     .menuMobActive .header__nav {
-        background: rgba(0, 0,0, 0.45);
-		border-radius: 10px;
-		padding: 20px;
-		flex-direction: column;
+        background: rgb(0 0 0 / 64%);
+        border-radius: 10px;
+        padding: 12px;
+        flex-direction: column;
+        position: fixed;
+        width: 90%;
+        z-index: 7;
     }
     
     .menuMobActive .header__menu {
@@ -446,6 +449,9 @@
 
 /* 420-576px col- */
 @media screen and (min-width: 420px) and (max-width: 576px){
+    .menuMobActive .header__nav {
+        width: 95%;
+    }
     .newsBlog__text {
         max-width: 346px;
         height: 154px;

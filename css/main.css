@@ -136,6 +136,7 @@
     background-size: cover;
     padding: 38px 0 220px;
     position: relative;
+    z-index: 3;
 }
 
 .header::after {
@@ -219,7 +220,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     background-color: #fff;
 }
-.js-active-header .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.js-active-header .hamburger-inner, .js-active-header .hamburger-inner::before, .js-active-header .hamburger-inner::after {
     background-color: #000;
 }
 
@@ -578,6 +579,9 @@
 }
 .swiper-slide-active .protect__btn {
     opacity: 1;
+}
+.swiper-container {
+    z-index: 0;
 }
 
 
