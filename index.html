@@ -14,6 +14,8 @@
 <!-- Fonts finish -->
     <!-- Slider CSS-->
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <!-- Burger CSS-->
+<link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
 <!-- Bootstrap Reboot CSS -->
 <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 <!-- Bootstrap CSS -->
@@ -49,15 +51,16 @@
                 </a>
             </div>
             <div class="col-2 d-sm-none">
-                <button class="js-burger">
-                    <div class="header__burgerLine"></div>
-                    <div class="header__burgerLine"></div>
-                    <div class="header__burgerLine"></div>  
-                </button>
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
             </div>
         </div>
          <!-- Header MOBILE finish -->
     </div>
+
     <div class="container">
         <div class="row">
             <div class="offset-xl-6 col-xl-6 col-md-12 d-none d-sm-block">
@@ -86,13 +89,12 @@
                 </div>
             </div>
         </div>
-        
         <div class="row align-items-center sec-nav">
             <div class="col-md-3 col-sm-3 d-none d-sm-block">
                 <a href="#" class="header__logo ico ico-motologo">
                 </a>
             </div>
-            <div class="col-xl-3 col-lg-5 col-md-5 col-sm-7 d-none d-sm-block">
+            <div class="col-xl-3 col-lg-5 col-md-5 col-sm-7 col-12 menu-collapse">
                 <div class="header__nav d-flex">
                     <a href="#" class="header__menu">
                         Home
@@ -133,7 +135,7 @@
         </div>
         <div class="row">
             <div class="offset-1 col-10">
-                <a href="#" class="header__btn btn">
+                <a href="#" class="header__btn btn" id="myID">
                     View products
                 </a>
             </div>
@@ -141,6 +143,51 @@
     </div>
 </header>
 <!-- Header finish -->
+     <!-- FixedHeader Start -->
+<section class="fixedHeader d-none d-sm-block">
+    <div class="container">
+        <div class="row align-items-center sec-nav">
+            <div class="col-md-3 col-sm-3 d-none d-sm-block">
+                <a href="#" class="header__logo ico ico-motologo">
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-5 col-md-5 col-sm-5 d-none d-sm-block">
+                <div class="header__nav d-flex">
+                    <a href="#" class="header__menu">
+                        Home
+                    </a>
+                    <a href="#" class="header__menu">
+                        Products
+                    </a>
+                    <a href="#" class="header__menu">
+                        About Us
+                    </a>
+                    <a href="#" class="header__menu">
+                        Contacts
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 offset-xl-3 col-xl-2 d-none d-sm-block">
+                <a href="#" class="header__cart ico ico-shopping-cart">
+                    <span>
+                        950.60 €
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1 d-none d-sm-block">
+                <a href="#" class="header__lang  ico ico-lang">
+                    <span>
+                        Eng
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+     <!-- FixedHeader finish -->
+
+
+
 <!-- Protect start -->   
 <section class="protect" id="protect">
     <div class="container">
@@ -434,6 +481,10 @@
 
 <!-- UsedBy start -->
 <section class="usedBy" id="usedBy">
+    <div class="sect__bg sect__bg_usedBy">
+        <div class="sect__bgImg sect__bgImg_usedBy">
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -590,8 +641,8 @@
 
 <!-- Footer start -->
 <footer class="footer" id="footer">
-    <div class="footer__bg">
-        <div class="footer__bgImg">
+    <div class="sect__bg">
+        <div class="sect__bgImg sect__bgImg_footer">
         </div>
     </div>
     <div class="container">
