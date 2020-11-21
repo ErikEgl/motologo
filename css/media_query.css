@@ -349,6 +349,17 @@
     .usedBy__title {
         font-size: 20px;
     }
+    .usedBy__heading {
+        font-size: 18px;
+    }
+    .view-visit__btn {
+        max-width: 277px;
+        width: 135%;
+        font-size: 6px;
+        letter-spacing: 4.2px;
+        margin-top: 33px;
+        padding: 7px 2px;
+    }
     .brands__logo {
         font-size: 6px;
     }
