@@ -352,13 +352,13 @@
     .usedBy__heading {
         font-size: 18px;
     }
-    .view-visit__btn {
-        max-width: 277px;
-        width: 135%;
+    .view-visit__btn_slider {
+        max-width: 250px;
+        width: 100%;
         font-size: 6px;
-        letter-spacing: 4.2px;
+        letter-spacing: 3.4px;
         margin-top: 33px;
-        padding: 7px 2px;
+        padding: 7px 4px;
     }
     .brands__logo {
         font-size: 6px;
@@ -430,7 +430,7 @@
 	} */
 }
 /* 280-320px col- */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
     .header__mobileView a span {
         font-size: 6.5px;
     }
@@ -441,6 +441,10 @@
         padding: 25px 70px 25px 16px;
         font-size: 10px;
         width: 200px;
+    }
+    .view-visit__btn_slider {
+        margin-left: -9px;
+        width: 250%;
     }
     .brands__logo {
         font-size: 4px;
