@@ -1170,7 +1170,7 @@ box-shadow: 0 1px 3px rgba(0,0,0, 0.8);
     text-align: center;
     width: 179px;
     padding: 5px;
-    line-height: 0.8px;
+    line-height: 1;
     text-transform: uppercase;
 }
 .footer__input {
