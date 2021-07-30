@@ -400,35 +400,8 @@
         margin-bottom: 8px;
     }
 
-       
+    
 
-
-
-
-    /* .menu-collapse {
-		display: none;
-	}
-	.menu-collapse-active .menu-collapse {
-		display: block;
-		order: 1;
-	}	
-	.menu-collapse-active .header_wrap {
-		background: rgba(0, 0,0, 0.45);
-		border-radius: 10px;
-		padding: 20px;
-		flex-direction: column;
-	}
-	
-	.menu-collapse-active .header_wrap  a{
-		margin-right: 0;
-		margin-bottom: 10px;
-		color: #fff;
-		font-weight: 700;
-		font-size: 20px;
-		padding: 15px 0;
-		border-bottom: 1px solid rgba(255, 255,255, 0.6);
-		display: block;
-	} */
 }
 /* 280-320px col- */
 @media screen and (max-width: 319px) {
@@ -481,4 +454,4 @@
     .footer__btn {
         font-size: 10px;
     }
-}
+}}

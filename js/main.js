@@ -135,25 +135,3 @@ addMenuActiveClass(146, 'js-fixed-header')
 
 
 
-
-// onclick= display()
-
-// function display() {
-//   document.getElementById("myID").style.marginTop = "80px";
-// }
-
-
-// function addMenuActiveClass(scrollHeight, activeClass) {
-//   console.log(window.scrollY)
-//   if (window.scrollY > scrollHeight) {
-//       body.classList.remove(activeClass);
-//   } else {
-//       body.classList.add(activeClass);
-//   }
-// }
-
-// addMenuActiveClass(0, 'js-notActive-header');
-
-// window.addEventListener('scroll', e=>{  
-//   addMenuActiveClass(0, 'js-notActive-header')
-// });
